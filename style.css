@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(250, 249, 248);
+}
+.childContainer {
+  position: relative;
+  height: 100vh;
+  width: 85%;
+  background-color: #e6f3fc;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.customUmbrella h1{
+    font-weight: 500;
+    font-size: 45px;
+}
+.umbrellaContainer {
+  position: relative;
+}
+.productImg {
+  width: 500px;
+}
+.productImg img {
+  max-width: 600px;
+  max-height: 500px;
+}
+.childBtn {
+  width: 20px;
+  height: 20px;
+  border-radius: 5rem;
+  border: none;
+}
+.pink {
+  background-color: rgb(255, 146, 164);
+}
+.blue {
+  background-color: rgb(44, 44, 209);
+}
+.yellow {
+  background-color: yellow;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  width: 70px;
+  position: absolute;
+  bottom: 45px;
+  left: 49%;
+}
+.logo img {
+  max-height: 40px;
+  max-width: 50px;
+}
+#loader {
+  animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 500px;
+}
+.hide {
+  display: none;
+}
+.btn {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 5px;
+}
+#file {
+  width: 9rem;
+  background-color: red;
+}
+.uploadLogo{
+    position: relative;
+    overflow: hidden;
+    /* display: inline-block; */
+}
+.btnLogo{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1rem;
+    color: rgb(255, 255, 255);
+    padding: 15px 60px;
+    border-radius: 3px;
+    font-size: 20px;
+    border: none;
+    background-color: #43a3e8;
+    fill: #fff;
+    /* font-weight: bold; */
+}
+.uploadLogo input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+.uploadText{
+    font-size: 14px;
+}
